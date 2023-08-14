@@ -33,3 +33,23 @@ subhanAllahDecrimentBtn.addEventListener("click", function(){
     subhanAllahDisplay.innerText = subhanAllahInitialValue; 
 });
 
+// Event listener for Alhamdulillah section
+
+alhamdulillahIncrimentBtn.addEventListener('click', function(){
+    if(alhamdulillahInitialValue == 33){
+        return alert('Alhamdulillah is Completed please enter another one');
+    }
+    alhamdulillahInitialValue += 1;
+    alhamdulillahDisplay.innerText = alhamdulillahInitialValue;
+});
+alhamdulillahDecrimentBtn.addEventListener('click', function(){
+    if(alhamdulillahInitialValue == 0){
+        return alert('You cannot add negative value');
+    }
+    alhamdulillahInitialValue -= 1;
+    alhamdulillahDisplay.innerText = alhamdulillahInitialValue;
+});
+
+// Event listener for Allahuakber section
+
+

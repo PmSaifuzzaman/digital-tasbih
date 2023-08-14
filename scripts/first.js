@@ -11,3 +11,25 @@ const allahAkberIncrimentBtn = document.getElementById('allahAkberIncrimentBtn')
 const allahAkberDecrimentBtn = document.getElementById('allahAkberDecrimentBtn');
 
 const resetBtn = document.getElementById('resetBtn');
+
+let subhanAllahInitialValue = 0;
+let alhamdulillahInitialValue = 0;
+let allahAkberInitialValue = 0;
+
+// Event listener for Subhanallah section 
+
+subhanAllahIncrimentBtn.addEventListener("click", function(){
+    if(subhanAllahInitialValue === 33){
+        return alert('Subhanallah is completed please enter another one');
+    }
+    subhanAllahInitialValue += 1;
+    subhanAllahDisplay.innerText = subhanAllahInitialValue; 
+});
+subhanAllahDecrimentBtn.addEventListener("click", function(){
+    if(subhanAllahInitialValue == 0){
+        return alert('You cannot add negative value');
+    }
+    subhanAllahInitialValue -= 1;
+    subhanAllahDisplay.innerText = subhanAllahInitialValue; 
+});
+

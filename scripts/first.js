@@ -52,4 +52,17 @@ alhamdulillahDecrimentBtn.addEventListener('click', function(){
 
 // Event listener for Allahuakber section
 
-
+allahAkberIncrimentBtn.addEventListener('click', function(){
+    if(allahAkberInitialValue == 33){
+        return alert('AllahAkber is Completed please enter another one');
+    }
+    allahAkberInitialValue += 1;
+    allahAkberDisplay.innerText = allahAkberInitialValue;
+});
+allahAkberDecrimentBtn.addEventListener('click', function(){
+    if(allahAkberInitialValue == 0){
+        return alert('You cannot add negative value');
+    }
+    allahAkberInitialValue -= 1;
+    allahAkberDisplay.innerText = allahAkberInitialValue;
+});

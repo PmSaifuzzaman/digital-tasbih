@@ -66,3 +66,16 @@ allahAkberDecrimentBtn.addEventListener('click', function(){
     allahAkberInitialValue -= 1;
     allahAkberDisplay.innerText = allahAkberInitialValue;
 });
+
+// Event listener for reset all section
+
+resetBtn.addEventListener('click', function(){
+    subhanAllahDisplay.innerText = 0;
+    subhanAllahInitialValue = 0;
+
+    alhamdulillahDisplay.innerText = 0;
+    alhamdulillahInitialValue = 0;
+
+    allahAkberDisplay.innerText = 0;
+    allahAkberInitialValue = 0;
+})
